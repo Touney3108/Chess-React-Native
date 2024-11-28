@@ -14,7 +14,10 @@ export interface BoardSquareProps {
     piece: Piece|null;
     isSquareWhite: boolean; 
     selected: boolean|null;
-    canBeMovedTo: boolean|null;
+    canBeMovedTo: boolean | null;
+    changedInPreviousTurn: boolean | null
+    isChecked:boolean|null
+    animationTime: number | null;
     row: number;
     col: number;
     onSquarePressed: (row:number,col:number) => void;
@@ -23,4 +26,9 @@ export interface BoardSquareProps {
 export type Position = {
     row: number,
     col: number
+}
+
+export type PieceMovement = {
+    step: boolean;
+    moves: number[][];
 }

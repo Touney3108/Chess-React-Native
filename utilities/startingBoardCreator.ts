@@ -1,4 +1,4 @@
-import { Square } from "./types";
+import { Square } from "../types/boardScreenTypes";
 export const generateStartingBoard = () => {
     const startingBoardPieces: Square[][] = Array(8).fill(null).map(() => Array(8).fill(null));
     for (let i = 0; i < 8; i++){

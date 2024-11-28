@@ -22,7 +22,7 @@ const ChessApp: React.FC = () => {
     useEffect(() => {
         if (isConnected) {
             // Connect to WebSocket server
-            const webSocket = new WebSocket('ws://192.168.48.95:8080/ws'); // Use your public IP or localhost if testing on the same device
+            const webSocket = new WebSocket('ws://192.168.183.33:8080/ws'); // Use your public IP or localhost if testing on the same device
 
             webSocket.onopen = () => {
                 console.log('WebSocket connection established');
